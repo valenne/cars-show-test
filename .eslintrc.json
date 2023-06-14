@@ -20,6 +20,7 @@
       "no-multiple-empty-lines" : ["error", {"max" : 1}],
       "no-console": "off",
       "jsx-quotes": ["error", "prefer-single"]
+    
   },
   "parserOptions": {
       "project": "tsconfig.json"
