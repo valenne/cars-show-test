@@ -21,11 +21,9 @@ const SearchManufacturer: React.FC<SearchManufacturerProps> = ({manufacturer, se
         .replace(/\s+/g, '')
         .includes(query.toLowerCase().replace(/\s+/g, '')));
 
-  console.log({Largo: filteredManufacturer.length, query, manufacturer});
-
   return (
     <div className='search-manufacturer'>
-      <Combobox>
+      <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className='relative w-full'>
           <Combobox.Button className={'absolute top-[14px]'}>
             <Image

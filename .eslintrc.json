@@ -19,10 +19,15 @@
       "no-trailing-spaces": ["error", { "skipBlankLines": false }],
       "no-multiple-empty-lines" : ["error", {"max" : 1}],
       "no-console": "off",
-      "jsx-quotes": ["error", "prefer-single"]
+      "jsx-quotes": ["error", "prefer-single"],
+      "@typescript-eslint/consistent-type-definitions" : ["error", "interface"],
+      "no-process-env" : "off",
+      "no-mixed-operators" :  "off"
+      
     
   },
   "parserOptions": {
       "project": "tsconfig.json"
     }
+
 }
