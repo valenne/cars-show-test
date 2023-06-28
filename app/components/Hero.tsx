@@ -19,8 +19,8 @@ function Hero() {
         <p className='text-[27px] text-black-100 font-light mt-5'>Streamline your car rental experience with our effortless booking process.</p>
         <CustomButton handleClick={handleScroll} disabled={false} type='button' title='Explore Card' className='mt-10' />
         <div className='xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen'>
-          <div className='relative xl:w-full w-[90%] xl:h-full h-[590px] z-0'>
-            <Image src='/hero.png' alt='hero' fill className='object-contain' />
+          <div className='relative xl:w-full w-[90%] xl:h-full h-[590px] z-0 flex justify-center'>
+            <Image src='/hero.png' alt='hero' width={1000} height={800} className='object-contain ' />
           </div>
           <div className='absolute xl:top-[160px] xl:right-30 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden' />
         </div>

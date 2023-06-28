@@ -8,13 +8,32 @@ export async function fetchCars() {
     'X-RapidAPI-Host': process.env.RAPID_HOST,
   };
 
-  const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla', {
+  const response = await fetch('https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=carrera', {
     headers});
   const result = await response.json();
 
   return result;
 
 }
+
+interface CardCarsProps {
+  'city_mpg': number;
+  'class': string;
+  'combination_mpg': number;
+  'cylinders': number;
+  'displacement': number;
+  'drive': string;
+  'fuel_type': string;
+  'highway_mpg': number;
+  'make': string;
+  'model': string;
+  'transmission': string;
+  'year': number;
+}
+
+export const generatorCarImageUrl = (car: CardCarsProps, angle?: string) => {
+
+};
 
 export function rentalPrice(year: number, miles: number) {
   // Base price for rental
