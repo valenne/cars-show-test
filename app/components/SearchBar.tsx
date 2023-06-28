@@ -8,7 +8,7 @@ function SearchBar() {
   const [manufacturer, setManufacturer] = useState('');
 
   const handleSearch = () => {
-    // here
+    // here test
   };
   return (
     <form className='searchbar' onSubmit={handleSearch}>
